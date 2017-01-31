@@ -1,13 +1,11 @@
 <p>
     Here is thread id: {{thread_id}}
     <br/>
-    Ordered by 'timestamp' asc :(
 </p>
 <ul>
     <li class="text" *ngFor="let item of items | async">
         <h1><a routerLink="/message/{{item.$key}}">{{item.title}}</a></h1>
         <p>Views: {{item.views}}</p>
         <p>Message: {{item.message}}</p>
-        <p>Timestamp: {{item.timestamp}}</p>
     </li>
 </ul>
