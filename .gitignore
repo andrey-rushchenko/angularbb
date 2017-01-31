@@ -38,3 +38,6 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+#github project site theme
+_config.yml
