@@ -1,0 +1,10 @@
+{
+  "forums" : [ null, {
+    "description" : "Test forum description",
+    "id" : 1,
+    "sortId" : 1,
+    "threads" : 0,
+    "title" : "Test",
+    "views" : 0
+  } ]
+}

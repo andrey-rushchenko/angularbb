@@ -1,0 +1,9 @@
+<p>
+    Here is forum ids: {{forum_id}}
+</p>
+<ul>
+    <li class="text" *ngFor="let item of items | async">
+        <h1><a routerLink="/thread/{{item.$key}}">{{item.title}}</a></h1>
+        <p>Messages: {{item.messages}} Views: {{item.views}}</p>
+    </li>
+</ul>
