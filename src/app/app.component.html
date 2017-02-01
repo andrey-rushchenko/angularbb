@@ -1,6 +1,28 @@
 <ul>
-    <li><a routerLink="/login" routerLinkActive="active">Sign in</a></li>
+    <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+    <li><a routerLink="/logout" routerLinkActive="active">Logout</a></li>
     <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
 </ul>
+
+  <div> {{ (af.auth | async)?.uid }} </div>
+  <br/>
+  <br/>
+  <button (click)="create_user()">Create user</button>
+  <br/>
+  <button (click)="login1()">Login email</button>
+  <br/>
+  <br/>
+  <button (click)="login2()">Login google redir</button>
+  <br/>
+  <br/>
+  <button (click)="login3()">Login google popup</button>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <button (click)="logout()">Logout</button>
+  <br/>
+
+
 
 <router-outlet></router-outlet>

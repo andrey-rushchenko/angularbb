@@ -10,9 +10,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class ForumListComponent {
     items: FirebaseListObservable<any[]>;
 
-    constructor(
-        af: AngularFire
-    ) {
+    constructor(private af: AngularFire) {
         this.items = af.database.list('/forums');
     }
 }
