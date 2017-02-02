@@ -4,8 +4,9 @@
 </p>
 <ul>
     <li class="text" *ngFor="let item of items | async">
-        <h1><a routerLink="/message/{{item.$key}}">{{item.title}}</a></h1>
-        <p>Views: {{item.views}}</p>
-        <p>Message: {{item.message}}</p>
+        <p>id: {{item.$key}}</p>
+        <p>title: {{item.title}}</p>
+        <p>message:</p>
+        <p>{{item.body}}</p>
     </li>
 </ul>

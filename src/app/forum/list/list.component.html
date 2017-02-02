@@ -1,6 +1,6 @@
 <ul>
     <li class="text" *ngFor="let item of items | async">
-        <h1><a routerLink="/forum/{{item.$key}}">{{item.title}}</a></h1>
+        <p><a routerLink="/forum/{{item.$key}}">{{item.title}}</a></p>
         <p>{{item.description}}</p>
         <p>Threads: {{item.threads}} Messages: {{item.messages}} Views: {{item.views}}</p>
     </li>
