@@ -18,11 +18,15 @@ export class ForumsComponent {
         this.items = af.database.list('/forums');
     }
 
-    newForum(): void {
-        this.router.navigate(['/forum-new']);
+    add(): void {
+        this.router.navigate(['/forum/new']);
     }
 
-    deleteForum(key: string): void {
+    edit(key: string): void {
+        this.router.navigate(['/forum/edit/' + key]);
+    }
+
+    delete(key: string): void {
         this.af.database.list('/forums').remove(key).then(_ => console.log('item deleted!'));
     }
 }

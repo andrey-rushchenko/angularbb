@@ -28,11 +28,11 @@ export class ThreadsComponent implements OnInit {
     ngOnInit(): void {
     }    
 
-    newThread(): void {
+    add(): void {
         this.router.navigate(['/thread-new/' + this.forum_id]);
     }
 
-    deleteThread(key: string): void {
+    delete(key: string): void {
         this.af.database.list('/forum_threads/' + this.forum_id).remove(key)
             .then(_ => console.log('item deleted from ' + this.forum_id));
     }

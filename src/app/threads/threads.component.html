@@ -3,7 +3,7 @@
 </p>
 
 
-<button (click)="newThread()">Start new thread</button>
+<button (click)="new()">Start new thread</button>
 
 
 <table class="table">
@@ -24,7 +24,7 @@
         <td>{{item.description}}</td>
         <td>{{item.messages}}</td>
         <td>{{item.views}}</td>
-        <td><button (click)="deleteThread(item.$key)">X</button></td>
+        <td><button (click)="delete(item.$key)">X</button></td>
     </tr>
     </tbody>
 </table>

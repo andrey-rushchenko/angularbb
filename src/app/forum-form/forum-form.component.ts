@@ -16,16 +16,20 @@ export class ForumFormComponent implements OnInit {
     title: string;
     description: string;
 
-    //items: FirebaseListObservable<any[]>;
-    //forum_id;
+    item: FirebaseListObservable<any[]>;
+    forum_id;
 
     constructor(
         private af: AngularFire,
         private route: ActivatedRoute,
         private location: Location
     ) {
-        //this.items = af.database.list('/forum_threads/' + this.route.snapshot.params['id']);
-        //this.forum_id = this.route.snapshot.params['id'];
+        this.forum_id = this.route.snapshot.params['id'];
+        
+        if(this.forum_id){
+            this.item = af.database.list('/forums/' + this.forum_id);//,  { preserveSnapshot: true });
+            console.log(this.forum_id);        
+        }
     }
 
     ngOnInit(): void {

@@ -35,7 +35,7 @@ export class ThreadFormComponent implements OnInit {
         this.location.back();
     }
 
-    saveForm(): void {
+    save(): void {
         this.af.database.list('/forum_threads/' + this.forum_id)
             .push({title: this.title, description: this.description})
             .then(_ => console.log('item added to ' + this.forum_id));

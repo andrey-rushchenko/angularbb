@@ -1,5 +1,5 @@
 
-<button (click)="newForum()">Add new forum</button>
+<button (click)="add()">Add new forum</button>
 
 <table class="table">
     <thead>
@@ -11,6 +11,7 @@
         <th>Messages</th>
         <th>Views</th>
         <th></th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -21,7 +22,8 @@
         <td>{{item.threads}}</td>
         <td>{{item.messages}}</td>
         <td>{{item.views}}</td>
-        <td><button (click)="deleteForum(item.$key)">X</button></td>
+        <td><button (click)="edit(item.$key)">E</button></td>
+        <td><button (click)="delete(item.$key)">X</button></td>
     </tr>
     </tbody>
 </table>

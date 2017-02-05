@@ -30,7 +30,11 @@ const appRoutes: Routes = [
         component: ForumsComponent
     },
     {
-         path: 'forum-new',
+         path: 'forum/new',
+         component: ForumFormComponent
+    },
+    {
+         path: 'forum/edit/:id',
          component: ForumFormComponent
     },
     {

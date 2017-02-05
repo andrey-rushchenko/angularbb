@@ -1,4 +1,13 @@
 
+{{item | async | json}}
+
+
+<ul>
+    <li *ngFor="let qwe of item | async">{{qwe.$key}}: {{qwe.$value}}</li>
+</ul>
+
+<input *ngFor="let qwe of item | async" placeholder="{{qwe.$key}}" value="{{qwe.$value}}"/>
+
 <input [(ngModel)]="title" placeholder="title" />
 <input [(ngModel)]="description" placeholder="description" />
 
