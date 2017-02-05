@@ -1,0 +1,27 @@
+
+<button (click)="newForum()">Add new forum</button>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Threads</th>
+        <th>Messages</th>
+        <th>Views</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="text" *ngFor="let item of items | async">
+        <td>{{item.$key}}</td>
+        <th><a routerLink="/forum/{{item.$key}}">{{item.title}}</a></th>
+        <td>{{item.description}}</td>
+        <td>{{item.threads}}</td>
+        <td>{{item.messages}}</td>
+        <td>{{item.views}}</td>
+        <td><button (click)="deleteForum(item.$key)">X</button></td>
+    </tr>
+    </tbody>
+</table>

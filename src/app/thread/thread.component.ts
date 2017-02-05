@@ -9,7 +9,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 @Component({
     selector: 'app-thread',
     templateUrl: './thread.component.html',
-    styleUrls: ['./thread.component.css']
+    styleUrls: ['./thread.component.scss']
 })
 export class ThreadComponent implements OnInit {
     items: FirebaseListObservable<any[]>;

@@ -1,0 +1,30 @@
+<p>
+    Here is forum id: {{forum_id}}
+</p>
+
+
+<button (click)="newThread()">Start new thread</button>
+
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Messages</th>
+        <th>Views</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="text" *ngFor="let item of items | async">
+        <td>{{item.$key}}</td>
+        <th><a routerLink="/thread/{{item.$key}}">{{item.title}}</a></th>
+        <td>{{item.description}}</td>
+        <td>{{item.messages}}</td>
+        <td>{{item.views}}</td>
+        <td><button (click)="deleteThread(item.$key)">X</button></td>
+    </tr>
+    </tbody>
+</table>

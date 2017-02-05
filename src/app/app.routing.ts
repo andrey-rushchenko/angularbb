@@ -8,10 +8,11 @@ import { AppComponent } from './app.component';
 //import { RegisterComponent } from './register/register.component';
 //import { LoginComponent } from './login/login.component';
 
-import { ForumListComponent } from './forum/list/list.component';
-import { ForumDetailComponent } from './forum/detail/detail.component';
-
-import { ThreadComponent } from './thread/thread.component';
+import { ForumsComponent }       from './forums/forums.component';
+import { ForumFormComponent }    from './forum/form/form.component';
+import { ThreadsComponent }      from './threads/threads.component';
+import { ThreadComponent }       from './thread/thread.component';
+import { ThreadFormComponent }   from './thread-form/thread-form.component';
 
 const appRoutes: Routes = [
 /*
@@ -26,11 +27,19 @@ const appRoutes: Routes = [
 */
     {
         path: '',
-        component: ForumListComponent
+        component: ForumsComponent
+    },
+    {
+         path: 'forum-new',
+         component: ForumFormComponent
     },
     {
          path: 'forum/:id',
-         component: ForumDetailComponent
+         component: ThreadsComponent
+    },
+    {
+         path: 'thread-new/:id',
+         component: ThreadFormComponent
     },
     {
          path: 'thread/:id',
@@ -38,7 +47,7 @@ const appRoutes: Routes = [
     },
     {
         path: '**',
-        component: ForumListComponent
+        component: ForumsComponent
     }
 ];
 

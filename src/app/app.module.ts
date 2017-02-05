@@ -9,11 +9,13 @@ import { routing } from './app.routing';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { ForumListComponent } from './forum/list/list.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { ForumsComponent } from './forums/forums.component';
+import { ForumFormComponent } from './forum/form/form.component';
+import { ThreadsComponent } from './threads/threads.component';
 import { ThreadComponent } from './thread/thread.component';
-import { ForumDetailComponent } from './forum/detail/detail.component';
+import { ThreadFormComponent } from './thread-form/thread-form.component';
 
 export const firebaseConfig = {
     apiKey: "AIzaSyD7vn6OO418zWkWQUwkK5kivArPLd3ucgE",
@@ -63,9 +65,11 @@ const myFirebaseAuthConfig = {
         AppComponent,
         RegisterComponent,
         LoginComponent,
-        ForumListComponent,
-        ForumDetailComponent,
-        ThreadComponent
+        ForumsComponent,
+        ForumFormComponent,
+        ThreadsComponent,
+        ThreadComponent,
+        ThreadFormComponent
     ],
     imports: [
         routing,

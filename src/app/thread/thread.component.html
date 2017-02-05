@@ -2,11 +2,18 @@
     Here is thread id: {{thread_id}}
     <br/>
 </p>
-<ul>
-    <li class="text" *ngFor="let item of items | async">
-        <p>id: {{item.$key}}</p>
-        <p>title: {{item.title}}</p>
-        <p>message:</p>
-        <p>{{item.body}}</p>
-    </li>
-</ul>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Messages</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="text" *ngFor="let item of items | async">
+        <th>{{item.$key}}</th>
+        <td>{{item.body}}</td>
+    </tr>
+    </tbody>
+</table>
