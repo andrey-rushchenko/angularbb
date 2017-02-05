@@ -7,8 +7,8 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
     selector: 'app-forum-form',
-    templateUrl: './form.component.html',
-    styleUrls: ['./form.component.scss']
+    templateUrl: './forum-form.component.html',
+    styleUrls: ['./forum-form.component.scss']
 })
 
 export class ForumFormComponent implements OnInit {

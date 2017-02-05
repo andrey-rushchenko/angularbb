@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 //import { LoginComponent } from './login/login.component';
 
 import { ForumsComponent }       from './forums/forums.component';
-import { ForumFormComponent }    from './forum/form/form.component';
+import { ForumFormComponent }    from './forum-form/forum-form.component';
 import { ThreadsComponent }      from './threads/threads.component';
 import { ThreadComponent }       from './thread/thread.component';
 import { ThreadFormComponent }   from './thread-form/thread-form.component';
