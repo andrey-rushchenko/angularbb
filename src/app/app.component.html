@@ -1,9 +1,32 @@
-<ul>
-    <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
-    <li><a routerLink="/logout" routerLinkActive="active">Logout</a></li>
-    <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
-</ul>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded main-nav">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <a class="navbar-brand" routerLink="/">Anglarbb</a>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav justify-content-end">
+      <li class="nav-item active" routerLink="/" routerLinkActive="active">
+        <a class="nav-link">Forums</a>
+      </li>
+      <li class="nav-item mr-auto">
+        <a class="nav-link">Users</a>
+      </li>
+      <li class="nav-item" routerLink="/login" routerLinkActive="active">
+        <a class="nav-link">Login</a>
+      </li>
+      <li class="nav-item" routerLink="/logout" routerLinkActive="active">
+        <a class="nav-link">Logout</a>
+      </li>
+      <li class="nav-item" routerLink="/register" routerLinkActive="active">
+        <a class="nav-link">Register</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 
   <div> {{ (af.auth | async)?.uid }} </div>
   <br/>
   <br/>
@@ -22,7 +45,6 @@
   <br/>
   <button (click)="logout()">Logout</button>
   <br/>
-
-
+-->
 
 <router-outlet></router-outlet>
