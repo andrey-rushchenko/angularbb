@@ -15,16 +15,6 @@ import { LoginComponent } from './login/login.component';
 import { ThreadComponent } from './thread/thread.component';
 import { ForumDetailComponent } from './forum/detail/detail.component';
 
-/*
-export const firebaseConfig = {
-    apiKey: 'AIzaSyAjtlFRhOOYOQRrxuqasoTGsdksrnUKCYY',
-    authDomain: 'angularbb.firebaseapp.com',
-    databaseURL: 'https://angularbb.firebaseio.com',
-    storageBucket: 'angularbb.appspot.com',
-    messagingSenderId: '215305961679'
-};
-*/
-
 export const firebaseConfig = {
     apiKey: "AIzaSyD7vn6OO418zWkWQUwkK5kivArPLd3ucgE",
     authDomain: "fireforum-b229b.firebaseapp.com",
@@ -32,7 +22,6 @@ export const firebaseConfig = {
     storageBucket: "fireforum-b229b.appspot.com",
     messagingSenderId: "655141948790"
 };
-
 /*
 // Anonymous
 af.auth.login({
@@ -84,7 +73,7 @@ const myFirebaseAuthConfig = {
         FormsModule,
         HttpModule,
         NgbModule.forRoot(),
-        AngularFireModule.initializeApp(firebaseConfig/*, myFirebaseAuthConfig*/)
+        AngularFireModule.initializeApp(firebaseConfig)
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -5,7 +5,7 @@ import { AngularFire, AuthProviders, AuthMethods  } from 'angularfire2';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
     constructor(private af: AngularFire) {}
@@ -20,7 +20,6 @@ export class AppComponent {
         // ({email: 'arg.box@gmail.com', password: '123456'});
     }
 
-    
     login1() {
         this.af.auth.login({
             email: 'arg.box@gmail.com',
