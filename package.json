@@ -14,7 +14,6 @@
   "dependencies": {
     "@angular/common": "^2.4.8",
     "@angular/compiler": "^2.4.8",
-    "@angular/compiler-cli": "^2.4.8",
     "@angular/core": "^2.4.8",
     "@angular/forms": "^2.4.8",
     "@angular/http": "^2.4.8",
@@ -37,7 +36,7 @@
     "@angular/compiler-cli": "^2.3.1",
     "@types/jasmine": "^2.5.38",
     "@types/node": "^6.0.63",
-    "codelyzer": "~2.0.0-beta.1",
+    "codelyzer": "^2.0.1",
     "jasmine-core": "^2.5.2",
     "jasmine-spec-reporter": "^2.5.0",
     "karma": "^1.2.0",
