@@ -5,8 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-//import { RegisterComponent } from './register/register.component';
-//import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 import { ForumsComponent }       from './forums/forums.component';
 import { ForumFormComponent }    from './forum-form/forum-form.component';
@@ -15,7 +15,6 @@ import { ThreadComponent }       from './thread/thread.component';
 import { ThreadFormComponent }   from './thread-form/thread-form.component';
 
 const appRoutes: Routes = [
-/*
     {
         path: 'login',
         component: LoginComponent
@@ -24,7 +23,6 @@ const appRoutes: Routes = [
         path: 'register',
         component: RegisterComponent
     },
-*/
     {
         path: '',
         component: ForumsComponent
